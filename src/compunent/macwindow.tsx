@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function MacWindow(props) {
+function MacWindow(props: any) {
   return (
     <div className={`border-4 border-blue-900 ${props.windowCol} w-full h-4/6`}>
       {/* mac bar */}
