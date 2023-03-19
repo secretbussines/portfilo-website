@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "@/app/globals.css";
 import MacWindow from "@/compunent/macwindow";
 import NavBar from "@/compunent/navbar";
@@ -11,7 +12,7 @@ export default function Home() {
       {/* hole thing with pic and mac window and slam */}
       <section className="flex flex-col items-center bg-slate-900 mx-36">
         <h1 className="font-bold text-4xl p-8 bg-slate-900">
-          Aslam O Alikum, I'm Musa Akbar
+          Aslam O Alikum, I am Musa Akbar
         </h1>
         {/* mac windowo */}
         <MacWindow windowCol="bg-teal-800" barCol="bg-cyan-900" />
@@ -22,7 +23,7 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold pb-8">More About me</h1>
           <p className="text-lg font-semibold tracking-wider pb-5">
             I build new projects just to tickle my brain and love teaching other
-            how they're made.
+            how they are made.
           </p>
           <p className="text-lg font-semibold tracking-wider pb-5">
             While I keep busy teaching courses, I still take interviews in
@@ -37,7 +38,8 @@ export default function Home() {
           <Skills />
         </div>
         <div className="flex flex-col items-center">
-          <img src="meetup.png" alt="meetup" className="max-w-xl" />
+          <Image src={"meetup.png"} alt={"meetup"} className="max-w-xl"></Image>
+          {/* <img src="meetup.png" alt="meetup" className="" /> */}
           <h1 className="text-xl font-bold p-4">Find me on social media</h1>
           <div>
             <Link

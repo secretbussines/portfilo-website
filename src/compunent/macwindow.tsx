@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 function MacWindow(props: any) {
   return (
     <div className={`border-4 border-blue-900 ${props.windowCol} w-full h-4/6`}>
@@ -20,7 +20,12 @@ function MacWindow(props: any) {
       {/* pic area */}
       <div className="flex justify-evenly items-center h-full py-10">
         <div className="">
-          <img src="musa.jpg" alt="musa" className="max-h-52 rounded-2xl" />
+          <Image
+            src={"musa.jpg"}
+            alt={"musa"}
+            className="max-h-52 rounded-2xl"
+          ></Image>
+          {/* <img src="musa.jpg" alt="musa" className="max-h-52 rounded-2xl" /> */}
           <h1 className="text-2xl font-bold">Personalize Theme</h1>
           <div className="flex justify-between p-3">
             <button className="w-10 border-2 border-white h-10 rounded-full bg-white"></button>
